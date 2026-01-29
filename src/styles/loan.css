@@ -1,0 +1,168 @@
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #333030;   /* Dark background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* ===== Calculator Card ===== */
+.calculator {
+   width: 340px;
+  max-width: 92%;
+  margin: 60px auto;
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+/* ===== Heading ===== */
+.calculator h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+/* ===== Input Fields ===== */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== Button ===== */
+#calcBtn {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 8px;
+  transition: background 0.2s ease;
+}
+
+#calcBtn:hover {
+  background: #1d4ed8;
+}
+
+/* ===== Loan Summary Section ===== */
+
+.loan-summary {
+  width: 340px;
+  max-width: 92%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.loan-summary h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: #374151;
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.summary-item label {
+  color: #6b7280;
+}
+
+.summary-item span {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Style for Calculate button */
+#calcBtn {
+  background-color: #007bff;   /* Blue */
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#calcBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Style for Reset button */
+#resetBtn {
+  background-color: #1172d4;   /* Light gray */
+  color: #fbfbfb;              /* Red text */
+  border: 2px solid #fcfbfb;   /* Red border */
+  padding: 8px 14px;
+  margin-top: 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#resetBtn:hover {
+  background-color: #0a3896;   /* Red fill */
+  color: white;                /* White text */
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
